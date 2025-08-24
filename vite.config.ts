@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: process.env.GITHUB_PAGES ? 'test-gh-pages' : './',
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     emptyOutDir: true, // also necessary
   },
   plugins: [react()],
